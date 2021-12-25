@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Job application</title>
+</head>
+<body>  
+  
+<h1>Job application</h1>
+<p>Fill the following form to apply for a job.</p>
+<table>
+<tr>
+<td width="10%"></td>
+<td width="40%">
+	<fieldset><legend> <h2>Personal information</h2></legend></h2>
+<label for="position">Position Appied For:</label>
+<input type="text" id="position" name="position" autofocus=""><br><br>
+<label>Full name</lable><br>
+<input type="text/name" required><br>
+<lable >Nationality</lable><br>
+<input type="text/name" required><br>
+<lable for="birthday" id="birthday">Birthday:</lable><br>
+<input type="date" min="1970-01-01" max="2000-12-31"><br>
+<lable>Address</label> <br>
+  <textarea  rows = "4" cols = "30" name = "description" required ></textarea><br>
+ <lable for="tel" id="phone">Phone number: </lable>&emsp;
+ <input type="tel" required><br><br>
+ <label for="email">Email:</label> &emsp;
+<input type="email" id="email" size="30" required>
+</fieldset>
+<br><br>
+</td>
+<td width="40%">
+	<fieldset><legend> <h2>Educational history</h2></legend></h2>
+  <lable>Write your Educational background</label> <br>
+    <textarea textarea rows = "4" cols = "30" name = "description" required></textarea><br>
+    	<label for="history">Qualification</label>
+	<select name="history" id="history">
+	<option value="BA">BA</option>
+	<option value="Mcs">Msc</option>
+
+	<option value="Diploma">Diploma</option>
+	<option value="College">College</option>
+
+	
+<option value="other">other</option>
+	</select>
+ 
+
+  </fieldset>
+  <br>
+
+  <fieldset><legend> <h2>Work Experiance</h2></legend></h2>
+    <lable>did you have work experience?</lable><br>
+    <lable for="yes">Yes</lable>
+    <input type="radio" name="NO" value="Yes">
+    <lable for="No">No</lable>
+    <input type="radio" name="NO" value="No"><br>
+
+
+    <label for="duration" >If you have worked before, for how many years?</label>
+    <input type="number" name="duration"
+       min="0" max="15"  required ><br>
+
+  <lable>Personal Statement</label> <br>
+   <textarea textarea rows = "4" cols = "30" name = "description" required maxlength="500" ></textarea>  
+  </fieldset><br><br>
+ 
+</td>
+<td width="10%"></td>
+</tr>
+</fieldset>
+</table>
+
+<fieldset>
+<legend><h2>Referee #1</h2></legend>
+   <lable for="name" > Name: </lable> 
+ <input type="text"  placeholder="Full Name" required><br><br>
+ 
+  <lable for="relation">Relationship:</label> 
+ <input type="text"  placeholder="Relationship" required><br><br>
+ <lable for="occupation">Occupation:</label> 
+ <input type="text"  placeholder="Occupation" required><br><br>
+ 
+ <lable for="email"> Email:</lable> 
+ <input type="email"  placeholder="Email" required><br><br>
+    
+  <lable for="phone">Telephone:</lable> 
+ <input type="tel"  placeholder="Telephone" required><br><br>
+ <label for="text" required> Address:</label>
+  <textarea id= "text" name="text" rows="4" cols="30" placeholder="Address"></textarea><br><br>
+  <br><br>
+</fieldset>
+
+<fieldset>
+<legend><h2>Referee #2</h2></legend>
+   <lable for="name" > Name: </lable> 
+ <input type="text"  placeholder="Full Name" required><br><br>
+ 
+  <lable for="relation">Relationship:</label> 
+ <input type="text"  placeholder="Relationship" required><br><br>
+ <lable for="occupation">Occupation:</label> 
+ <input type="text"  placeholder="Occupation" required><br><br>
+ 
+ <lable for="email"> Email:</lable> 
+ <input type="email"  placeholder="Email" required><br><br>
+    
+  <lable for="phone">Telephone:</lable> 
+ <input type="tel"  placeholder="Telephone" required><br><br>
+ <label for="text" required> Address:</label>
+  <textarea id= "text" name="text" rows="4" cols="30" placeholder="Address"></textarea><br><br>
+  <br><br>
+</fieldset>
+
+
+<button type="submit" >Submit</button>
+</body>
+
+</html

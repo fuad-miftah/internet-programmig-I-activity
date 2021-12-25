@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Food delivery</title>
+    </head>
+    <body>
+       <form> 
+        <fieldset width = "50%">
+            <legend>General information</legend>
+            <label for="date">Arrival Date: </label>
+            <input type="date" id="date" name="date"><br>
+            <label for = "Nights">Nights: </label>
+            <input type="number" id="Nights" name="nights">
+            <br><label for="Adults">Adults: </label>
+            <select id = "Adults" name = "Adults">
+                <option value = "1">1</option>
+
+                <option value = "0">0</option>
+            </select>
+            <br><label for="child">Adults: </label>
+            <select id = "child" name = "child">
+                <option value = "1">1</option>
+                <option value = "0" selected>0</option>
+            </select>
+        </fieldset>
+
+        <fieldset width = "50%">
+            <legend>Preferences</legend>
+            <form>
+                <label>Room type: </label>
+                <input type="radio" id="roomtype1" name="room" value="Standard" checked>
+                <label for="roomtype1">Standard</label>
+                <input type="radio" id="roomtype2" name="room" value="Buisiness">
+                <label for="roomtype2">Buisiness</label>
+                <input type="radio" id = "roomtype3" name = "room" value = "Suite">
+                <label for= "roomtype3">Suite</label><br>
+                <label>Bed type: </label>
+                <input type="radio" id = "king" name="bed" value = "king" checked>
+                <label for= "king">King</label>
+                <input type = "radio" id= "double" name= "bed" value= "Double">
+                <br><input type="checkbox" id="smoking" name="smoke" value="smokng">
+                <label for= "smoking">Smoking</label>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Contact inforamtion</legend>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label for= "name">Name: &nbsp; &nbsp;</label>
+                        </td>
+                        <td>
+                            <input type= "text" id="name" name= "name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for= "email">Email:&nbsp; &nbsp; </label>
+                        </td>
+                        <td>
+                            <input type= "email" id="email" name= "Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for= "phone">Phone: &nbsp; &nbsp;</label>
+                        </td>
+                        <td>
+                            <input type= "tel" id="phone" name= "phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="094-996-0922">
+                        </td>
+                    </tr>
+                </table>
+                
+            </form>
+        </fieldset>
+        <input type = "submit" id = "submit" name = "submit" value = "Submit Reservation" size = "30%"> &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type = "reset" id = "reseting" name = "clear" value = "clear" size = "30%"> 
+    </form>
+
+    </body>
+</html>
