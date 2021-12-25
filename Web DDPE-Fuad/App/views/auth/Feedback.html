@@ -1,0 +1,105 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+    <title>
+        feedBack
+    </title>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <table width="100%">
+        <tr>
+            <td width="10%"></td>
+            <td><img src="../../../resources/images/pizza.png" alt="LOGO" height="70"></td>
+            <td align="right"><span>
+                    <a href="lifeHacks.html">life-hack</a>|
+                    <a href="home.html">Home</a>|
+                    <a href="pizzaorder.html">pizzaorder</a>|
+                    <a href="food delivery.html">Food delivery</a>|
+                    <a href="Feedback.html">FeedBack</a>|</span>
+            </td>
+            <td width="10%"></td>
+        </tr>
+
+    </table>
+
+    <table width=100%>
+        <tr>
+            <td width=20%></td>
+            <td width=40%>
+                <h1>FEEDBACK</h1>
+            </td>
+            <td width=20%></td>
+        </tr>
+        <tr>
+            <td width=20%></td>
+            <td width=40%>
+                <form action="#">
+                    <fieldset>
+                        <legend>FeedBack Form</legend>
+                        <label for="name">Name</label>
+                        <input type="text" id="FullName" required><br><br>
+                        <label for="Email">Email</label>
+                        <input type="emai" name="email" min="5" max="15"
+                            pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;" required>
+                        <p>Please check all the condition he apply to you</p>
+                        <ul>
+                            <li><label for="angry">angry</label>
+                                <input type="checkbox" name="check" id="angry">
+                            </li>
+                            <li>
+                                <label for="">Sad</label>
+                                <input type="checkbox" name="check" id="Sad">
+                            </li>
+                            <li>
+                                <label for="">Happy</label>
+                                <input type="checkbox" name="check" id="Happy">
+                            </li>
+                            <li>
+                                <label for="">check</label>
+                                <input type="checkbox" name="check">
+                            </li>
+                            <li>
+                                <label for="">Ambivalent</label>
+                                <input type="checkbox" name="check" id="Ambivalent">
+                            </li>
+                            <p>How satisfied were you with our service?</p>
+                            <ul>
+                                <li><label for="service">Very satisfied</label>
+                                    <input type="radio" name="service" id="angry">
+                                </li>
+                                <li>
+                                    <label for="service">Satisfied</label>
+                                    <input type="radio" name="service" id="Sad">
+                                </li>
+                                <li>
+                                    <label for="service">Didn't care</label>
+                                    <input type="radio" name="service" id="Happy">
+                                </li>
+                                <li>
+                                    <label for="service">Dissatisfied</label>
+                                    <input type="radio" name="service">
+                                </li>
+                                <li>
+                                    <label for="service">Very dissatisfied</label>
+                                    <input type="radio" name="service" id="Ambivalent">
+                                </li>
+                            </ul>
+                            <label for="comment">Further comments:</label>
+                            <textarea name="comment" id="com" cols="20" rows="5"></textarea>
+
+                            <button name="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </td>
+            <td width=20%></td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
