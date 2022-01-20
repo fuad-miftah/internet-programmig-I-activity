@@ -7,7 +7,7 @@
 	<title>REGISTER</title>
 </head>
 
-<body>
+<body onload="alert('opening register form')">
 	<table width="100%">
 		<tr>
 			<td width="10%"></td>
@@ -40,7 +40,7 @@
 				<h1>Register</h1>
 				<form>
 					<label for="first name">First Name</label><br>
-					<input type="text" name="first name" size="50%" maxlength="50" required><br>
+					<input type="text" name="first name" size="50%" maxlength="50" required onfocusout="upper(this)"><br>
 					<label for="phone">Phone</label><br>
 					<input type="tel" name="phone" size="50%" required><br>
 					<label for="age">Age</label><br>
@@ -77,11 +77,12 @@
 					<label for="photo">Photo</label><br>
 					<input type="file" name="photo"><br>
 					<label for="describe">Describe Yourself</label><br>
-					<textarea name="describe" rows="7" cols="9"></textarea><br>
-					<input type="submit" value="submit">
+					<textarea name="describe" rows="7" cols="9" onfocus="rows='20'"></textarea><br>
+					<input type="submit" value="submit" onfocus="style.background='red'" onfocusout="style.background='yellow'">
 					<input type="reset" value="reset">
 
 				</form>
+				<script src="../../../resources/javaScript/register.js"></script>
 			</td>
 
 			<td width="25%" valign="top">
