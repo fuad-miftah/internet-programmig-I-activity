@@ -39,16 +39,22 @@
             <td width="55%">
                 <h1>Signin</h1>
                 <p>Signin and get full access to our resources</p><br>
-                <form>
+                <form id="form1">
                     <label for="email">Username</label>
-                    <input type="email" name="email" placeholder="Email" required><br>
+                    <input type="email" name="email" placeholder="Email" onfocus="highlightInput(this)" required><br><br>
                     <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="Password" minlength="6" maxlength="32"
+                    <input type="password" name="password" placeholder="Password"  onfocus="highlightInput(this)" minlength="6" maxlength="32"
                         required><br>
-                    <input type="submit" value="signin">
+                    <input type="submit" value="signin" id="submit">
 
                 </form>
-
+                <script src="../../../resources/javaScript/signin.js"></script>
+                <script>
+                    var cl = document.getElementById("submit");
+                        cl.onclick=function click(){
+                        alert("Are you shure");
+                    }
+                </script> 
             </td>
 
             <td width="25%" valign="top">
