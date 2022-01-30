@@ -28,7 +28,7 @@
     </table>
     <hr>
 
-    <table width="100%">
+    <table width="100%" id="mainTable">
         <tr>
             <td width="10%"></td>
             <td width="55%"></td>
@@ -38,9 +38,12 @@
 
         <tr>
             <td width="10%"></td>
-            <td width="55%">
-                <h1>Eric Hoffer and the Power of Self-Education</h1>
-                <img src="../../../resources/images/life1.png" alt="Beautiful sun rise" usemap="#image-map">
+            <td width="55%" id="para1">
+                <div id="main-cont">
+                    <button onclick="change()" style="background-color: rgb(140, 140, 235);">click here to change image and video and add some cool paragraph</button>
+                <h1 id="h1">Eric Hoffer and the Power of Self-Education</h1>
+                <div id="img1-container">
+                <img src="../../../resources/images/life1.png" alt="Beautiful sun rise" usemap="#image-map" id="img1">
                 <map name="image-map">
                     <area target="" alt="" title="" href="https://www.shutterstock.com/search/good+human+being"
                         coords="641,143,41" shape="circle">
@@ -51,6 +54,7 @@
                         coords="682,213,681,252,686,274,687,309,693,323,736,311,742,300,743,247,742,213,731,189,715,175,683,172,666,184"
                         shape="poly">
                 </map>
+                </div>
                 <p>
                     I recently read The True Believer by Eric Hoffer. It&apos;s a book about how mass movements evolve.
                     With a lot of historical examples, the book explains the patterns and common threads among them.
@@ -71,13 +75,20 @@
                 <hr>
                 <h3>New Podcast</h3>
                 <h1>Jack Ma - How I Overcame Failure</h1>
-                <audio src="../../../resources/audio/Jack Ma - How I Overcame Failure.MP3" controls="controls" onplay="alert('audio played ')" onpause="alert('audio paused')">Jack Ma -
+                <div id="audio1-container">
+                <audio id="audio1" src="../../../resources/audio/Jack Ma - How I Overcame Failure.MP3" controls="controls" onplay="alert('audio played ')" onpause="alert('audio paused')">Jack Ma -
                     How I Overcame Failure</audio>
+                </div>
                 <hr>
                 <h3>Pick of The Week</h3>
                 <h1>24 Hours A Day</h1>
-                <a id="24"><video width="600" height="400" src="../../../resources/video/24_HOURS.mp4"
+                <div id="vidc2">
+                <div id="video1-container">
+                <a id="24"><video id="vid1" width="600" height="400" src="../../../resources/video/24_HOURS.mp4"
                         controls="controls" poster="../../../resources/images/poster.png" onplay="alert('video played ')" onpause="alert('video paused')">24_HOURS</video></a>
+                </div>
+                </div>
+            </div>
             </td>
 
             <td width="25%" valign="top">
@@ -151,6 +162,11 @@ Third   1GB Mobile Data
             <td width="10%"></td>
         <tr>
     </table>
+
+    <script src="../../../resources/javaScript/lifeHacks.js">
+        
+        
+    </script>
 
 </body>
 
