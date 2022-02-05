@@ -40,13 +40,16 @@
 				<h1>Register</h1>
 				<form>
 					<label for="first name">First Name</label><br>
-					<input type="text" name="first name" size="50%" maxlength="50" required onfocusout="upper(this)"><br>
+					<input type="text" name="first name" size="50%" maxlength="50" required onfocusout="upper(this)" id="fname"><br>
 					<label for="phone">Phone</label><br>
-					<input type="tel" name="phone" size="50%" required><br>
+					<input type="tel" name="phone" size="50%" required id="phone"><br>
 					<label for="age">Age</label><br>
-					<input type="number" name="age" min="18" max="30" required><br>
+					<input type="number" name="age" min="18" max="30" required id="age"><br>
 					<label for="color">Your Favorite color</label><br>
-					<input type="color" name="color"><br>
+					<input type="color" name="color" id="color"><br>
+					<button id="bt1">Display</button>
+					<div class="output">
+					</div>
 					<label for="birthday">Birthday</label><br>
 					<input type="date" name="birthday"><br>
 					<label for="gender">Gender</label><br>
@@ -150,6 +153,65 @@ Third   1GB Mobile Data
 			<td width="10%"></td>
 		<tr>
 	</table>
+
+
+	<script>
+		function set(v)
+	{
+		this.value = v
+	}
+
+	const all = {}
+	const fname = document.getElementById('fname')
+	const age = document.getElementById('age')
+	const phone = document.getElementById('phone')
+	const color = document.getElementById('color')
+
+	fname.addEventListener('input',()=>{
+		const obj1 = new set(fname.value);
+		all.FirstName = obj1.value
+	})
+
+
+	age.addEventListener('input',()=>{
+		const obj2= new set(age.value);
+		all.Age = obj2.value
+	})
+
+	phone.addEventListener('input',()=>{
+		const obj3 = new set(phone.value);
+		all.Phone = obj3.value
+	})
+
+	color.addEventListener('click',()=>{
+		const obj4 = new set(color.value);
+		all.Color = obj4.value
+	})
+
+document.getElementById('bt1').addEventListener('click',(e)=>{
+	e.preventDefault()
+	const parent = document.querySelector('.output')
+
+	const f=document.createElement('h4')
+	f.innerHTML = "First Name: " + all.FirstName
+
+	const a = document.createElement('h4')
+	a.innerHTML = "Age: " + all.Age
+
+	const p = document.createElement('h4')
+	p.innerHTML = "Phone: " +  all.Phone
+
+	const c= document.createElement('h4')
+	c.innerHTML = "Color: " + all.Color + " Airplane"
+	
+	parent.appendChild(f)
+	parent.appendChild(a)
+	parent.appendChild(p)
+	parent.appendChild(c)
+
+
+})
+	</script>
 
 </body>
 
